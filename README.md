@@ -7,7 +7,7 @@ The AI does not learn what you *mean*. It learns exactly what you *score*. This 
 ## Demo
 
 | Baseline (built-in reward) | Hover bonus (broken rule) | Fixed (improvement bonus) |
-|---|---|
+|---|---|---|
 | Lands in ~365 frames | Hovers until the time limit | Lands in ~324 frames |
 
 
