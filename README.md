@@ -7,9 +7,9 @@ The AI does not learn what you *mean*. It learns exactly what you *score*. This 
 ## Demo
 
 | Baseline (built-in reward) | Hover bonus (broken rule) | Fixed (improvement bonus) |
-|---|---|---|
-
+|---|---|
 | Lands in ~365 frames | Hovers until the time limit | Lands in ~324 frames |
+
 
 
 ## What this project does
@@ -97,6 +97,11 @@ python 07_episode_length.py  # compare all models
 - [Stable-Baselines3](https://stable-baselines3.readthedocs.io/) (PPO, MlpPolicy)
 - PyTorch (installed with Stable-Baselines3)
 
+## Troubleshooting
+
+- **Box2D install fails mentioning "swig":** run `pip install swig`, then reinstall `"gymnasium[box2d]"`.
+- **`LunarLander-v2` not found:** current Gymnasium only has `LunarLander-v3`.
+- **Crash on Windows during training:** keep training code inside `if __name__ == "__main__":`.
 ## Troubleshooting
 
 - **Box2D install fails mentioning "swig":** run `pip install swig`, then reinstall `"gymnasium[box2d]"`.
